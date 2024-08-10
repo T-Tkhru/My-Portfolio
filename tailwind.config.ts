@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        notoJP: ["var(--font-notojp)"],
+        adventPro: ["var(--font-adventpro)"],
+        libreBaskerville: ["var(--font-libre)"],
+        monomaniac: ["var(--font-monomaniac)"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
