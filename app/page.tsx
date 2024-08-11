@@ -3,11 +3,15 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <h1 className="text-8xl text-center">Takaharu T. Portfolio</h1>
+      <h1 className="text-6xl md:text-8xl text-center">
+        Takaharu T. Portfolio
+      </h1>
       <section className="About bg-black p-4">
-        <h2 className="text-7xl text-white">About</h2>
+        <h2 className="text-center md:text-left text-7xl text-white mb-4 border-b-2">
+          About
+        </h2>
         <div className="flex flex-col md:flex-row items-center md:items-start">
-          <div className="w-full md:w-1/3 flex items-center justify-center m-2">
+          <div className="w-full md:w-2/5 flex items-center justify-center m-2">
             <img
               src="/profile.jpg"
               alt="profile"
@@ -35,8 +39,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="Works">
-        <h2 className="text-7xl">Works</h2>
+      <section className="Works ">
+        <h2 className="text-center md:text-left text-7xl text-black mb-4 border-b-2">
+          Works
+        </h2>
         <ul>
           <li>
             <Link href="/works/1">Work 1</Link>
@@ -49,7 +55,11 @@ export default function Home() {
           </li>
         </ul>
       </section>
-      <section className="Contact"></section>
+      <section className="Contact bg-black">
+        <h2 className="text-center md:text-left text-7xl text-white mb-4 border-b-2">
+          Contact
+        </h2>
+      </section>
     </div>
   );
 }

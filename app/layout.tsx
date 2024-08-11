@@ -19,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" className={`${adventPro.variable} ${monomaniac.variable}`}>
-      <body className="bg-white {inter.className}">{children}</body>
+      <body className="bg-white {inter.className}">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
