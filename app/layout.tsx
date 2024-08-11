@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./compornents/Header";
-import { adventPro, libreBaskerville, notoJP, monomaniac} from "./utiles/font";
+import { adventPro, libreBaskerville, notoJP, monomaniac } from "./utiles/font";
 import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -19,10 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" className={`${adventPro.variable} ${monomaniac.variable}`}>
-      <body className={inter.className}>
-        <Header />
-        {children}
-      </body>
+      <body className="bg-white {inter.className}">{children}</body>
     </html>
   );
 }
