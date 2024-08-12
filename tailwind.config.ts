@@ -21,6 +21,26 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        "tracking-in-contract-bck-top":
+          "tracking-in-contract-bck-top 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000)    ",
+      },
+      keyframes: {
+        "tracking-in-contract-bck-top": {
+          "0%": {
+            "letter-spacing": "1em",
+            transform: "translateZ(400px) translateY(-300px)",
+            opacity: "0",
+          },
+          "40%": {
+            opacity: ".6",
+          },
+          to: {
+            transform: "translateZ(0) translateY(0)",
+            opacity: "1",
+          },
+        },
+      },
     },
   },
   plugins: [],

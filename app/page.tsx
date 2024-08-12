@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <div className="h-auto">
-        <h1 className="text-8xl text-center leading-relaxed">
+        <h1 className="text-7xl md:text-8xl text-center leading-relaxed mb-4">
           Takaharu T.
           <br /> Portfolio
         </h1>
@@ -54,7 +54,7 @@ export default function Home() {
         <div className="flex justify-center">
           <a
             href="mailto:ttkirua1@yahoo.co.jp"
-            className="text-white hover:underline text-6xl "
+            className="text-3xl text-white hover:underline md:text-5xl "
           >
             ttkirua1@yahoo.co.jp
           </a>
