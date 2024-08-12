@@ -1,13 +1,20 @@
 import Link from "next/link";
+import ReadmoreB from "./compornents/ReadmoreB";
+import Workbox from "./compornents/Workbox";
+import ReadmoreW from "./compornents/ReadmoreW";
+import Footer from "./compornents/Footer";
 
 export default function Home() {
   return (
     <div>
-      <h1 className="text-6xl md:text-8xl text-center">
-        Takaharu T. Portfolio
-      </h1>
-      <section className="About bg-black p-4">
-        <h2 className="text-center md:text-left text-7xl text-white mb-4 border-b-2">
+      <div className="h-auto">
+        <h1 className="text-8xl text-center leading-relaxed">
+          Takaharu T.
+          <br /> Portfolio
+        </h1>
+      </div>
+      <section className="About bg-black p-10 md:p-14">
+        <h2 className="text-center md:text-left text-7xl text-white mb-8 border-b-2 ">
           About
         </h2>
         <div className="flex flex-col md:flex-row items-center md:items-start">
@@ -20,46 +27,40 @@ export default function Home() {
           </div>
 
           <div className="textarea flex-1 flex flex-col justify-between">
-            <p className="items-center md:w-3/4 ml-4 text-white ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              voluptate, quos, quod, quibusdam doloremque dolorum quae
-              repudiandae voluptates quia magnam autem. Quisquam voluptate,
-              quos, quod, quibusdam doloremque dolorum quae repudiandae
-              voluptates quia magnam autem.
+            <p className="items-center md:w-3/4 ml-4 text-white mb-4 font-kosugimaru">
+              2002年5月30日、大阪出身。2021年より大阪府立大学（現大阪公立大学）に入学、知能メディア処理研究グループで活動を行う。2025年から大阪公立大学院に進学予定。
             </p>
-            <div className="text-right relative w-32 h-32 bg-white rounded-full overflow-hidden group border-2 border-white self-end mr-4">
-              <Link
-                href="/about"
-                className="absolute inset-0 flex items-center justify-center text-black text-center transition-colors duration-500 z-10 group-hover:text-white"
-              >
-                Read More
-              </Link>
-              <div className="absolute inset-0 bg-black transition-transform duration-500 transform translate-x-full group-hover:translate-x-0 z-0"></div>
-            </div>
+            <ReadmoreB href="/about" />
           </div>
         </div>
       </section>
-      <section className="Works ">
-        <h2 className="text-center md:text-left text-7xl text-black mb-4 border-b-2">
+      <section className="Works p-10 md:p-14">
+        <h2 className="text-center md:text-left text-7xl text-black mb-8 border-b-2 border-black ">
           Works
         </h2>
-        <ul>
-          <li>
-            <Link href="/works/1">Work 1</Link>
-          </li>
-          <li>
-            <Link href="/works/2">Work 2</Link>
-          </li>
-          <li>
-            <Link href="/works/3">Work 3</Link>
-          </li>
-        </ul>
+        <div className="flex-1 flex flex-col justify-between">
+          <ul className="flex flex-col items-center md:flex-row md:space-x-5   h-auto">
+            <Workbox href="/works/1" title="aaaaa" img="/silverratio.png" />
+            <Workbox href="/works/2" title="bbbbb" img="/silverratio.png" />
+            <Workbox href="/works/3" title="ccccc" img="/silverratio.png" />
+          </ul>
+          <ReadmoreW href="/works" />
+        </div>
       </section>
-      <section className="Contact bg-black">
-        <h2 className="text-center md:text-left text-7xl text-white mb-4 border-b-2">
+      <section className="Contact bg-black p-10 md:p-14">
+        <h2 className="text-center md:text-left text-7xl text-white mb-8 border-b-2 ">
           Contact
         </h2>
+        <div className="flex justify-center">
+          <a
+            href="mailto:ttkirua1@yahoo.co.jp"
+            className="text-white hover:underline text-6xl "
+          >
+            ttkirua1@yahoo.co.jp
+          </a>
+        </div>
       </section>
+      <Footer color="white" />
     </div>
   );
 }

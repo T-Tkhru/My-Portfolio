@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import {
+  Inter,
+  Monomaniac_One,
+  Hachi_Maru_Pop,
+  Rampart_One,
+} from "next/font/google";
 import "./globals.css";
 import Header from "./compornents/Header";
-import { adventPro, libreBaskerville, notoJP, monomaniac } from "./utiles/font";
-import Head from "next/head";
+import {
+  adventPro,
+  libreBaskerville,
+  notoJP,
+  monomaniac,
+  kosugimaru,
+} from "./utiles/font";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +28,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja" className={`${adventPro.variable} ${monomaniac.variable}`}>
-      <body className="bg-white {inter.className}">
-        <Header />
+    <html
+      lang="ja"
+      className={`${adventPro.variable} ${monomaniac.variable} ${kosugimaru.variable}`}
+    >
+      <body className={`bg-white`} id="top">
+        <div className="h-20">
+          <Header />
+        </div>
         {children}
       </body>
     </html>

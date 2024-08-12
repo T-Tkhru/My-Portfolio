@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { kosugimaru } from "./app/utiles/font";
 
 const config: Config = {
   content: [
@@ -13,6 +14,7 @@ const config: Config = {
         adventPro: ["var(--font-adventpro)"],
         libreBaskerville: ["var(--font-libre)"],
         monomaniac: ["var(--font-monomaniac)"],
+        kosugimaru: ["var(--font-kosugimaru)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

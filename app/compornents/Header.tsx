@@ -9,26 +9,28 @@ const Header = () => {
     setOpenMenu(!openMenu);
   };
   return (
-    <header className="bg-gray-300 flex justify-between h-20 items-center">
-      <img src="/logo.png" alt="logo" className="max-h-full" />
+    <header className="fixed top-0 left-0 w-full z-20 bg-gray-300 opacity-75 flex justify-between h-20 items-center">
+      <Link href="/" className="h-20">
+        <img src="/logo.png" alt="logo" className="max-h-full" />
+      </Link>
       <ul className="md:flex space-x-10 mr-4 text-2xl hidden text-black">
         <li>
-          <Link href="/" className="">
+          <Link href="/" className="font-monomaniac">
             Home
           </Link>
         </li>
         <li>
-          <Link href="/works" className="">
-            works
-          </Link>
-        </li>
-        <li>
-          <Link href="/about" className="">
+          <Link href="/about" className="font-monomaniac">
             About
           </Link>
         </li>
         <li>
-          <Link href="/contact" className="">
+          <Link href="/works" className="font-monomaniac">
+            works
+          </Link>
+        </li>
+        <li>
+          <Link href="/contact" className="font-monomaniac">
             Contact
           </Link>
         </li>
@@ -51,15 +53,16 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href="/works" className="" onClick={toggleMenu}>
-                Works
-              </Link>
-            </li>
-            <li>
               <Link href="/about" className="" onClick={toggleMenu}>
                 About
               </Link>
             </li>
+            <li>
+              <Link href="/works" className="" onClick={toggleMenu}>
+                Works
+              </Link>
+            </li>
+
             <li>
               <Link href="/contact" className="" onClick={toggleMenu}>
                 Contact
