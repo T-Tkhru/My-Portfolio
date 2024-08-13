@@ -8,3 +8,7 @@ html {
   scroll-behavior: smooth;
   font-family: var(--font-monomaniac);
 }
+
+p {
+  font-family: var(--font-kosugimaru);
+}

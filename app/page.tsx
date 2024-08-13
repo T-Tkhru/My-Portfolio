@@ -6,7 +6,7 @@ import Footer from "./compornents/Footer";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <div className="h-auto">
         <h1 className="text-7xl md:text-8xl text-center leading-relaxed mb-4">
           Takaharu T.
@@ -27,8 +27,8 @@ export default function Home() {
           </div>
 
           <div className="textarea flex-1 flex flex-col justify-between">
-            <p className="items-center md:w-3/4 ml-4 text-white mb-4 font-kosugimaru">
-              2002年5月30日、大阪出身。2021年より大阪府立大学（現大阪公立大学）に入学、知能メディア処理研究グループで活動を行う。2025年から大阪公立大学院に進学予定。
+            <p className="items-center md:w-3/4 ml-4 text-white mb-4">
+              2002年5月30日、大阪出身。2021年より大阪府立大学（現大阪公立大学）に入学、知能メディア処理研究グループ所属。2025年から大阪公立大学院に進学予定。
             </p>
             <ReadmoreB href="/about" />
           </div>
@@ -39,12 +39,27 @@ export default function Home() {
           Works
         </h2>
         <div className="flex-1 flex flex-col justify-between">
-          <ul className="flex flex-col items-center md:flex-row md:space-x-5   h-auto">
-            <Workbox href="/works/1" title="aaaaa" img="/silverratio.png" />
-            <Workbox href="/works/2" title="bbbbb" img="/silverratio.png" />
-            <Workbox href="/works/3" title="ccccc" img="/silverratio.png" />
+          <ul className="flex flex-col items-center md:flex-row flex-wrap h-auto">
+            <Workbox
+              href="/works/1"
+              title="aaaaa"
+              img="/silverratio.png"
+              className=""
+            />
+            <Workbox
+              href="/works/2"
+              title="bbbbb"
+              img="/silverratio.png"
+              className=""
+            />
+            <Workbox
+              href="/works/3"
+              title="ccccc"
+              img="/silverratio.png"
+              className=""
+            />
           </ul>
-          <ReadmoreW href="/works" />
+          <ReadmoreW href="/Works&Researches" />
         </div>
       </section>
       <section className="Contact bg-black p-10 md:p-14">
@@ -61,6 +76,6 @@ export default function Home() {
         </div>
       </section>
       <Footer color="white" />
-    </div>
+    </>
   );
 }

@@ -21,23 +21,39 @@ const Header = () => {
         </Link>
         <ul className="md:flex space-x-10 mr-4 text-2xl hidden text-black">
           <li>
-            <Link href="/" className="font-monomaniac">
+            <Link
+              href="/"
+              className="relative group hover:opacity-70 duration-300"
+            >
               Home
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-500 group-hover:w-full"></span>
             </Link>
           </li>
           <li>
-            <Link href="/about" className="font-monomaniac">
+            <Link
+              href="/about"
+              className="relative group hover:opacity-70 duration-300"
+            >
               About
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-500 group-hover:w-full"></span>
             </Link>
           </li>
           <li>
-            <Link href="/works" className="font-monomaniac">
-              works
+            <Link
+              href="/Works&Researches"
+              className="relative group hover:opacity-70 duration-300"
+            >
+              Works & Researches
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-500 group-hover:w-full"></span>
             </Link>
           </li>
           <li>
-            <Link href="/contact" className="font-monomaniac">
+            <Link
+              href="/contact"
+              className="relative group hover:opacity-70 duration-300"
+            >
               Contact
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-500 group-hover:w-full"></span>
             </Link>
           </li>
         </ul>
@@ -68,8 +84,8 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href="/works" onClick={toggleMenu}>
-                Works
+              <Link href="/Works&Researches" onClick={toggleMenu}>
+                Works & Researches
               </Link>
             </li>
             <li>
