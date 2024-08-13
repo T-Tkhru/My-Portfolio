@@ -53,13 +53,6 @@ export default function Works() {
         <h2 className="text-center md:text-left text-7xl mb-8 border-b-2 ">
           Researches
         </h2>
-        <ul className="flex flex-col">
-          {ResearchList.map((research) => (
-            <li>
-              <Link href={research.link}>{research.title}</Link>
-            </li>
-          ))}
-        </ul>
       </section>
     </>
   );
