@@ -1,5 +1,11 @@
 import Link from "next/link";
 import Workbox from "../compornents/Workbox";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Takaharu T. Portfolio - Works & Researches",
+  description: "Explore the works and researches.",
+};
 
 export default function Works() {
   const ResearchList = [
