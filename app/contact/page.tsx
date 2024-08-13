@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "Takaharu T. Portfolio - Contact",
-  description: "Contact Takaharu T.",
-};
+// export  const metadata: Metadata = {
+//   title: "Takaharu T. Portfolio - Contact",
+//   description: "Contact Takaharu T.",
+// };
 
 export default function Contact() {
   return (

@@ -2,10 +2,10 @@ import Link from "next/link";
 import Footer from "../compornents/Footer";
 import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Takaharu T. Portfolio - About",
-  description: "Learn more about Takaharu T.",
-};
+// export const metadata: Metadata = {
+//   title: "Takaharu T. Portfolio - About",
+//   description: "Learn more about Takaharu T.",
+// };
 
 export default function About() {
   const frontSkills = [
