@@ -66,11 +66,8 @@ export default function Works() {
 
         <ul className="flex flex-col h-auto space-y-2 list-disc">
           {ResearchList.map((research, index) => (
-            <Animation animation="animate__fadeInLeft">
-              <li
-                key={index}
-                className="w-auto h-auto border-b-2 border-gray-400"
-              >
+            <Animation animation="animate__fadeInLeft" key={index}>
+              <li className="w-auto h-auto border-b-2 border-gray-400">
                 <Link
                   href={research.link}
                   className="text-base md:text-xl hover:opacity-70 duration-300"
