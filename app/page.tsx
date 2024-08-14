@@ -70,7 +70,9 @@ export default function Home() {
               className=""
             />
           </ul>
-          <ReadmoreW href="/Works&Researches" />
+          <Animation animation="animate__fadeInUp" className="flex justify-end">
+            <ReadmoreW href="/Works&Researches" />
+          </Animation>
         </div>
       </section>
       <section className="Contact bg-black p-10 md:p-14" id="contact">
