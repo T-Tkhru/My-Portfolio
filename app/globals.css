@@ -17,13 +17,16 @@ p {
   animation: fadeIn 1s ease-out forwards;
 }
 
-@media (prefers-reduced-motion: reduce) {
+@media print, (prefers-reduced-motion: reduce) {
   .animate__animated {
-    -webkit-animation-duration: 1ms !important;
-    animation-duration: 1ms !important;
-    -webkit-transition-duration: 1ms !important;
-    transition-duration: 1ms !important;
+    -webkit-animation-duration: 1s !important;
+    animation-duration: 1s !important;
+    -webkit-transition-duration: 1s !important;
+    transition-duration: 1s !important;
     -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
+  }
+  .animate__animated[class*="Out"] {
+    opacity: 0;
   }
 }
