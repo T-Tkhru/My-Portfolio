@@ -50,7 +50,7 @@ export default function About() {
         </Animation>
         <div className="skillswrap flex flex-col md:flex-row md:space-x-4 w-full">
           <div className="front w-full md:w-1/2 ">
-            <Animation animation="animate__fadeInUp" delay="0.4s">
+            <Animation animation="animate__fadeInUp">
               <h3 className="text-4xl text-black mb-4">Frontend</h3>
               <ul className="front flex justify-center space-x-4 flex-wrap pt-4 bg-gray-500 rounded-xl">
                 {frontSkills.map((skill) => (
@@ -66,7 +66,7 @@ export default function About() {
           </div>
 
           <div className="backend w-full md:w-1/2 ">
-            <Animation animation="animate__fadeInUp" delay="0.8s">
+            <Animation animation="animate__fadeInUp">
               <h3 className="text-4xl text-black mb-4">Backend</h3>
               <ul className="back flex justify-center space-x-4 flex-wrap pt-4 bg-gray-300 rounded-xl">
                 {backSkills.map((skill) => (

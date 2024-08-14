@@ -11,7 +11,11 @@ interface WorkboxProps {
 const Workbox = (props: WorkboxProps) => {
   return (
     <li className={`w-auto md:w-1/3 h-auto mb-8 px-2 ${props.className}`}>
-      <Animation animation="animate__fadeInUp" delay="200ms">
+      <Animation
+        animation="animate__fadeInUp"
+        delay="200ms"
+        rootMargin="-100px"
+      >
         <Link
           href={props.href}
           className="text-2xl text-black hover:opacity-70 duration-300"

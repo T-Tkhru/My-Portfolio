@@ -18,7 +18,7 @@ const Header = () => {
       ></div>
       <div className="relative flex justify-between w-full h-full items-center z-10">
         <Link href="/" className="h-20">
-          <img src="/logo.png" alt="logo" className="max-h-full" />
+          <img src="/logo.png" alt="logo" className="max-h-full rounded-lg" />
         </Link>
         <ul className="md:flex space-x-10 mr-4 text-2xl hidden text-black">
           <li>
@@ -73,7 +73,7 @@ const Header = () => {
           >
             &times;
           </button>
-          <Animation animation="animate__fadeInDown">
+          <Animation animation="animate__fadeInDown animate__faster">
             <ul className="space-y-8 text-3xl text-gray-700">
               <li>
                 <Link href="/" onClick={toggleMenu}>

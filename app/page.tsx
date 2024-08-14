@@ -70,7 +70,11 @@ export default function Home() {
               className=""
             />
           </ul>
-          <Animation animation="animate__fadeInUp" className="flex justify-end">
+          <Animation
+            animation="animate__fadeInUp"
+            className="flex justify-end"
+            rootMargin="-50px"
+          >
             <ReadmoreW href="/Works&Researches" />
           </Animation>
         </div>
