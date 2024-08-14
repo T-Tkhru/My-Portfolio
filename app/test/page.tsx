@@ -1,14 +1,9 @@
-import Link from "next/link";
-import Footer from "../compornents/Footer";
-import { Metadata } from "next";
+// app/test/page.tsx
+
 import Animation from "../compornents/Animation";
+import Footer from "../compornents/Footer";
 
-export const metadata: Metadata = {
-  title: "Takaharu T. Portfolio - About",
-  description: "Learn more about Takaharu T.",
-};
-
-export default function About() {
+export default function Test() {
   const frontSkills = [
     "HTML",
     "CSS",
@@ -21,12 +16,12 @@ export default function About() {
   const backSkills = ["Python", "C++"];
   return (
     <>
-      <div className="about bg-black text-white">
-        <h1 className="text-7xl md:text-8xl text-center leading-relaxed py-8 ">
-          About
-        </h1>
-        <section className="about p-10 md:p-14">
-          <Animation animation="animate__fadeInUp">
+      <Animation animation="animate__fadeInUp">
+        <div className="about bg-black text-white">
+          <h1 className="text-7xl md:text-8xl text-center leading-relaxed py-8 ">
+            About
+          </h1>
+          <section className="about p-10 md:p-14">
             <div className="aboutwrapper w-full md:w-3/4 mx-auto">
               <img src="/profile.jpg" alt="profile" className="mb-6" />
               <div className="txt-wrapper text-center">
@@ -38,19 +33,16 @@ export default function About() {
                 </p>
               </div>
             </div>
-          </Animation>
-        </section>
-      </div>
-
-      <section className="skills bg-white p-10 md:p-14">
-        <Animation animation="animate__fadeInLeft">
+          </section>
+        </div>
+      </Animation>
+      <Animation animation="animate__fadeInUp">
+        <section className="skills bg-white p-10 md:p-14">
           <h2 className="text-center md:text-left text-7xl text-black mb-8 border-b-2 ">
             Skills
           </h2>
-        </Animation>
-        <div className="skillswrap flex flex-col md:flex-row md:space-x-4 w-full">
-          <div className="front w-full md:w-1/2 ">
-            <Animation animation="animate__fadeInUp" delay="0.4s">
+          <div className="skillswrap flex flex-col md:flex-row md:space-x-4 w-full">
+            <div className="front w-full md:w-1/2 ">
               <h3 className="text-4xl text-black mb-4">Frontend</h3>
               <ul className="front flex justify-center space-x-4 flex-wrap pt-4 bg-gray-500 rounded-xl">
                 {frontSkills.map((skill) => (
@@ -62,11 +54,8 @@ export default function About() {
                   </li>
                 ))}
               </ul>
-            </Animation>
-          </div>
-
-          <div className="backend w-full md:w-1/2 ">
-            <Animation animation="animate__fadeInUp" delay="0.8s">
+            </div>
+            <div className="backend w-full md:w-1/2 ">
               <h3 className="text-4xl text-black mb-4">Backend</h3>
               <ul className="back flex justify-center space-x-4 flex-wrap pt-4 bg-gray-300 rounded-xl">
                 {backSkills.map((skill) => (
@@ -78,10 +67,10 @@ export default function About() {
                   </li>
                 ))}
               </ul>
-            </Animation>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </Animation>
 
       <Footer color="black" />
     </>

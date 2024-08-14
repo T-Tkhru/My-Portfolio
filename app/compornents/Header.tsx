@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import Animation from "./Animation";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -72,28 +73,30 @@ const Header = () => {
           >
             &times;
           </button>
-          <ul className="space-y-8 text-3xl text-gray-700 animate-tracking-in-contract-bck-top">
-            <li>
-              <Link href="/" onClick={toggleMenu}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" onClick={toggleMenu}>
-                About
-              </Link>
-            </li>
-            <li>
-              <Link href="/Works&Researches" onClick={toggleMenu}>
-                Works & Researches
-              </Link>
-            </li>
-            <li>
-              <Link href="/#contact" onClick={toggleMenu}>
-                Contact
-              </Link>
-            </li>
-          </ul>
+          <Animation animation="animate__fadeInDown">
+            <ul className="space-y-8 text-3xl text-gray-700">
+              <li>
+                <Link href="/" onClick={toggleMenu}>
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" onClick={toggleMenu}>
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link href="/Works&Researches" onClick={toggleMenu}>
+                  Works & Researches
+                </Link>
+              </li>
+              <li>
+                <Link href="/#contact" onClick={toggleMenu}>
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </Animation>
         </div>
       )}
     </header>
