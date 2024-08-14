@@ -15,7 +15,7 @@ interface AnimationProps {
 const Animation: React.FC<AnimationProps> = ({
   children,
   className = "",
-  rootMargin = "-170px", //ref要素（以下JSX内）が画面上に現れてから170px過ぎた時、inViewがtrueになる
+  rootMargin = "-100px", //ref要素（以下JSX内）が画面上に現れてから100px過ぎた時、inViewがtrueになる
   triggerOnce = true, //trueにすると、一度inViewがtrueになったら、それ以降はfalseにならない
   animation = "animate__fadeInUp",
   delay = "0s",
