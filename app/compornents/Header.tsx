@@ -49,7 +49,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              href="/contact"
+              href="/#contact"
               className="relative group hover:opacity-70 duration-300"
             >
               Contact
@@ -89,7 +89,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href="/contact" onClick={toggleMenu}>
+              <Link href="/#contact" onClick={toggleMenu}>
                 Contact
               </Link>
             </li>

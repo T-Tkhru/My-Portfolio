@@ -27,6 +27,9 @@ export default function Home() {
           </div>
 
           <div className="textarea flex-1 flex flex-col justify-between">
+            <h3 className="pt-4 md:pt-0 text-center md:text-left text-4xl text-white mb-4 ml-4 font-kosugimaru ">
+              坪山貴晴
+            </h3>
             <p className="items-center md:w-3/4 ml-4 text-white mb-4">
               2002年5月30日、大阪出身。2021年より大阪府立大学（現大阪公立大学）に入学、知能メディア処理研究グループ所属。2025年から大阪公立大学院に進学予定。
             </p>
@@ -62,7 +65,7 @@ export default function Home() {
           <ReadmoreW href="/Works&Researches" />
         </div>
       </section>
-      <section className="Contact bg-black p-10 md:p-14">
+      <section className="Contact bg-black p-10 md:p-14" id="contact">
         <h2 className="text-center md:text-left text-7xl text-white mb-8 border-b-2 ">
           Contact
         </h2>

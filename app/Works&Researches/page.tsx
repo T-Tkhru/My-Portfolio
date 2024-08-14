@@ -9,9 +9,12 @@ import { Metadata } from "next";
 
 export default function Works() {
   const ResearchList = [
-    { title: "aaaaa", link: "/research/1" },
-    { title: "bbbbb", link: "/research/2" },
-    { title: "ccccc", link: "/research/3" },
+    {
+      title: "Video Watermarking Method Based on 3D U-Net Robust Against",
+      link: "/research/1",
+      year: 2024,
+      conference: "EMM研究会",
+    },
   ];
   const WorkList = [
     { href: "/works/1", title: "aaaaa", img: "/silverratio.png" },
@@ -53,6 +56,23 @@ export default function Works() {
         <h2 className="text-center md:text-left text-7xl mb-8 border-b-2 ">
           Researches
         </h2>
+        <ul className="flex flex-col h-auto space-y-2 list-disc">
+          {ResearchList.map((research, index) => (
+            <li
+              key={index}
+              className="w-auto h-auto border-b-2 border-gray-400"
+            >
+              <Link
+                href={research.link}
+                className="text-2xl text-white hover:opacity-70 duration-300"
+              >
+                <p className="mt-2">
+                  {research.title} ({research.conference} {research.year})
+                </p>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </section>
     </>
   );
