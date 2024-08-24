@@ -52,20 +52,20 @@ export default function Home() {
         <div className="flex-1 flex flex-col justify-between">
           <ul className="flex flex-col items-center md:flex-row flex-wrap h-auto">
             <Workbox
-              href="/works/1"
-              title="aaaaa"
-              img="/silverratio.png"
+              href="https://hayaoshi-button.vercel.app/"
+              title="早押しボタン"
+              img="/game.png"
               className=""
             />
             <Workbox
               href="/works/2"
-              title="bbbbb"
+              title="準備中"
               img="/silverratio.png"
               className=""
             />
             <Workbox
               href="/works/3"
-              title="ccccc"
+              title="準備中"
               img="/silverratio.png"
               className=""
             />

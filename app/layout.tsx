@@ -1,10 +1,4 @@
 import type { Metadata } from "next";
-import {
-  Inter,
-  Monomaniac_One,
-  Hachi_Maru_Pop,
-  Rampart_One,
-} from "next/font/google";
 import "./globals.css";
 import Header from "./compornents/Header";
 import {
@@ -14,8 +8,6 @@ import {
   monomaniac,
   kosugimaru,
 } from "./utiles/font";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Takaharu T. Portfolio",

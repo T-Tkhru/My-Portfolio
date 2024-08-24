@@ -20,12 +20,16 @@ export default function Works() {
     },
   ];
   const WorkList = [
-    { href: "/works/1", title: "aaaaa", img: "/silverratio.png" },
-    { href: "/works/2", title: "bbbbb", img: "/silverratio.png" },
-    { href: "/works/3", title: "ccccc", img: "/silverratio.png" },
-    { href: "/works/4", title: "ddddd", img: "/silverratio.png" },
-    { href: "/works/5", title: "eeeee", img: "/silverratio.png" },
-    { href: "/works/6", title: "fffff", img: "/silverratio.png" },
+    {
+      href: "https://hayaoshi-button.vercel.app/",
+      title: "早押しボタン",
+      img: "/game.png",
+    },
+    { href: "/works/2", title: "準備中", img: "/silverratio.png" },
+    { href: "/works/3", title: "準備中", img: "/silverratio.png" },
+    { href: "/works/4", title: "準備中", img: "/silverratio.png" },
+    { href: "/works/5", title: "準備中", img: "/silverratio.png" },
+    { href: "/works/6", title: "準備中", img: "/silverratio.png" },
   ];
 
   return (
