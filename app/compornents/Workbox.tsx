@@ -19,6 +19,7 @@ const Workbox = (props: WorkboxProps) => {
         <Link
           href={props.href}
           className="text-2xl text-black hover:opacity-70 duration-300"
+          target="_blank"
         >
           <div className="relative w-full pb-[70.71%] overflow-hidden">
             <img
