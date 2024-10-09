@@ -58,9 +58,9 @@ export default function Home() {
               className=""
             />
             <Workbox
-              href="/works/2"
-              title="準備中"
-              img="/silverratio.png"
+              href="https://money-h-l.vercel.app/"
+              title="お金の価値観クイズ"
+              img="/money-h-l.png"
               className=""
             />
             <Workbox

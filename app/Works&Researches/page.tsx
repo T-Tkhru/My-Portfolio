@@ -25,7 +25,11 @@ export default function Works() {
       title: "早押しボタン",
       img: "/game.png",
     },
-    { href: "/works/2", title: "準備中", img: "/silverratio.png" },
+    {
+      href: "https://money-h-l.vercel.app/",
+      title: "お金の価値観クイズ",
+      img: "/money-h-l.png",
+    },
     { href: "/works/3", title: "準備中", img: "/silverratio.png" },
     { href: "/works/4", title: "準備中", img: "/silverratio.png" },
     { href: "/works/5", title: "準備中", img: "/silverratio.png" },
