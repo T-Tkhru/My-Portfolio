@@ -4,19 +4,14 @@ import { Metadata } from "next";
 import Animation from "../compornents/Animation";
 import Footer from "../compornents/Footer";
 
-// export const metadata: Metadata = {
-//   title: "Takaharu T. Portfolio - Works & Researches",
-//   description: "Explore the works and researches.",
-// };
-
 export default function Works() {
   const ResearchList = [
     {
       title:
         "Video Watermarking Method Based on 3D U-Net Robust Against Re-shooting",
-      link: "/research/1",
-      year: 2024,
-      conference: "EMM研究会",
+      link: "https://www.jstage.jst.go.jp/article/transinf/advpub/0/advpub_2024MUP0003/_article/-char/ja",
+      year: 2025,
+      conference: "電子情報通信学会",
     },
   ];
   const WorkList = [
