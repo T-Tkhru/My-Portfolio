@@ -88,10 +88,10 @@ export default function Home() {
         <div className="flex justify-center">
           <Animation animation="animate__fadeInUp">
             <a
-              href="mailto:ttkirua1@yahoo.co.jp"
+              href="mailto:takaharu.tsuboyama@gmail.com"
               className="text-3xl text-white hover:underline md:text-5xl "
             >
-              ttkirua1@yahoo.co.jp
+              takaharu.tsuboyama@gmail.com
             </a>
           </Animation>
         </div>
