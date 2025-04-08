@@ -9,7 +9,7 @@ export default function Works() {
     {
       title:
         "Video Watermarking Method Based on 3D U-Net Robust Against Re-shooting",
-      link: "https://www.jstage.jst.go.jp/article/transinf/advpub/0/advpub_2024MUP0003/_article/-char/ja",
+      link: "https://globals.ieice.org/en_transactions/information/10.1587/transinf.2024MUP0003/_f",
       year: 2025,
       conference: "電子情報通信学会",
     },
