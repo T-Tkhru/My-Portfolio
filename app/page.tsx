@@ -66,9 +66,9 @@ export default function Home() {
               className=""
             />
             <Workbox
-              href="/works/3"
-              title="準備中"
-              img="/silverratio.png"
+              href="https://unityroom.com/games/tofu_cut_master"
+              title="豆腐カットマスター"
+              img="/tofu_cut_master.png"
               className=""
             />
           </ul>

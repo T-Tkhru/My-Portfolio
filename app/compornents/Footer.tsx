@@ -11,7 +11,7 @@ const Footer = (props: FooterProps) => {
       <ul className="flex h-30 space-x-10 pt-8 justify-center">
         <li>
           <Link
-            href="https://x.com/TaKadayoooooo"
+            href="https://x.com/TaKa_tec_"
             target="_blank"
             rel="noopener noreferrer"
           >

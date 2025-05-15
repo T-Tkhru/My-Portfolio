@@ -25,7 +25,11 @@ export default function Works() {
       title: "お金の価値観クイズ",
       img: "/money-h-l.png",
     },
-    { href: "/works/3", title: "準備中", img: "/silverratio.png" },
+    {
+      href: "https://unityroom.com/games/tofu_cut_master",
+      title: "豆腐カットマスター",
+      img: "/tofu_cut_master.png",
+    },
     { href: "/works/4", title: "準備中", img: "/silverratio.png" },
     { href: "/works/5", title: "準備中", img: "/silverratio.png" },
     { href: "/works/6", title: "準備中", img: "/silverratio.png" },
