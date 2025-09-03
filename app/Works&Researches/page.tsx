@@ -1,10 +1,20 @@
+"use client";
+
 import Link from "next/link";
 import Workbox from "../compornents/Workbox";
 import { Metadata } from "next";
 import Animation from "../compornents/Animation";
 import Footer from "../compornents/Footer";
+import { useEffect, useState } from "react";
 
 export default function Works() {
+  type WorkItem = {
+    href: string;
+    title: string;
+    img: string;
+    description?: string;
+  };
+
   const ResearchList = [
     {
       title:
@@ -14,26 +24,15 @@ export default function Works() {
       conference: "電子情報通信学会",
     },
   ];
-  const WorkList = [
-    {
-      href: "https://hayaoshi-button.vercel.app/",
-      title: "早押しボタン",
-      img: "/game.png",
-    },
-    {
-      href: "https://money-h-l.vercel.app/",
-      title: "お金の価値観クイズ",
-      img: "/money-h-l.png",
-    },
-    {
-      href: "https://unityroom.com/games/tofu_cut_master",
-      title: "豆腐カットマスター",
-      img: "/tofu_cut_master.png",
-    },
-    { href: "/works/4", title: "準備中", img: "/silverratio.png" },
-    { href: "/works/5", title: "準備中", img: "/silverratio.png" },
-    { href: "/works/6", title: "準備中", img: "/silverratio.png" },
-  ];
+
+  const [WorkList, setWorkList] = useState<WorkItem[]>([]);
+  useEffect(() => {
+    fetch("/works.json")
+      .then((res) => res.json())
+      .then((data: WorkItem[]) => {
+        setWorkList(data);
+      });
+  }, []);
 
   return (
     <>
@@ -53,7 +52,7 @@ export default function Works() {
           </h2>
         </Animation>
         <ul className="flex flex-col md:flex-row flex-wrap items-center h-auto">
-          {WorkList.map((work, index) => (
+          {WorkList.map((work: WorkItem, index: number) => (
             <Workbox
               key={work.href}
               href={work.href}

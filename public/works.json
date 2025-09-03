@@ -1,0 +1,38 @@
+[
+  {
+    "url": "https://hayaoshi-button.vercel.app/",
+    "title": "早押しボタン",
+    "image": "/game.png",
+    "description": "複数人で早押しクイズができるWebアプリ。スマホやPCで参加可能。"
+  },
+  {
+    "url": "https://money-h-l.vercel.app/",
+    "title": "お金の価値観クイズ",
+    "image": "/money-h-l.png",
+    "description": "お金に関する価値観を診断できるクイズアプリ。"
+  },
+  {
+    "url": "https://unityroom.com/games/tofu_cut_master",
+    "title": "豆腐カットマスター",
+    "image": "/tofu_cut_master.png",
+    "description": "豆腐を素早く正確にカットするアクションゲーム。"
+  },
+  {
+    "url": "/works/4",
+    "title": "準備中",
+    "image": "/silverratio.png",
+    "description": "新しい作品を準備中です。"
+  },
+  {
+    "url": "/works/5",
+    "title": "準備中",
+    "image": "/silverratio.png",
+    "description": "新しい作品を準備中です。"
+  },
+  {
+    "url": "/works/6",
+    "title": "準備中",
+    "image": "/silverratio.png",
+    "description": "新しい作品を準備中です。"
+  }
+]

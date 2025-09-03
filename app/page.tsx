@@ -1,11 +1,28 @@
-import Link from "next/link";
+"use client";
 import ReadmoreB from "./compornents/ReadmoreB";
 import Workbox from "./compornents/Workbox";
 import ReadmoreW from "./compornents/ReadmoreW";
 import Footer from "./compornents/Footer";
 import Animation from "./compornents/Animation";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  type WorkItem = {
+    url: string;
+    title: string;
+    image: string;
+    description?: string;
+  };
+
+  const [WorkList, setWorkList] = useState<WorkItem[]>([]);
+  useEffect(() => {
+    fetch("/works.json")
+      .then((res) => res.json())
+      .then((data: WorkItem[]) => {
+        setWorkList(data);
+      });
+  }, []);
+
   return (
     <>
       <div className="h-auto">
@@ -53,24 +70,15 @@ export default function Home() {
         </Animation>
         <div className="flex-1 flex flex-col justify-between">
           <ul className="flex flex-col items-center md:flex-row flex-wrap h-auto">
-            <Workbox
-              href="https://hayaoshi-button.vercel.app/"
-              title="早押しボタン"
-              img="/game.png"
-              className=""
-            />
-            <Workbox
-              href="https://money-h-l.vercel.app/"
-              title="お金の価値観クイズ"
-              img="/money-h-l.png"
-              className=""
-            />
-            <Workbox
-              href="https://unityroom.com/games/tofu_cut_master"
-              title="豆腐カットマスター"
-              img="/tofu_cut_master.png"
-              className=""
-            />
+            {WorkList.slice(0, 3).map((work, index) => (
+              <Workbox
+                key={work.url}
+                href={work.url}
+                title={work.title}
+                img={work.image}
+                className=""
+              />
+            ))}
           </ul>
           <Animation
             animation="animate__fadeInUp"
