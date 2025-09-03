@@ -1,14 +1,36 @@
-import Link from "next/link";
 import Animation from "./Animation";
+import Modal from "./Modal";
 
 interface WorkboxProps {
   href: string;
   title: string;
-  img: string;
+  image: string;
+  description?: string;
   className: string;
+  onOpenModal?: () => void;
+  setModalData?: (data: {
+    title: string;
+    description?: string;
+    image?: string;
+    href?: string;
+  }) => void;
 }
 
 const Workbox = (props: WorkboxProps) => {
+  const handleClick = () => {
+    if (props.setModalData) {
+      props.setModalData({
+        title: props.title,
+        description: props.description,
+        image: props.image,
+        href: props.href,
+      });
+    }
+    if (props.onOpenModal) {
+      props.onOpenModal();
+    }
+  };
+
   return (
     <li className={`w-full md:w-1/3 h-auto mb-8 px-2 ${props.className}`}>
       <Animation
@@ -16,21 +38,19 @@ const Workbox = (props: WorkboxProps) => {
         delay="200ms"
         rootMargin="-100px"
       >
-        <Link
-          href={props.href}
-          className="text-2xl text-black hover:opacity-70 duration-300"
-          target="_blank"
+        <button
+          className="w-full text-left text-2xl text-black hover:opacity-70 duration-300 focus:outline-none"
+          onClick={handleClick}
         >
           <div className="relative w-full pb-[70.71%] overflow-hidden">
             <img
-              src={props.img}
+              src={props.image}
               alt={props.title}
               className="absolute inset-0 w-full h-full object-cover"
             />
           </div>
-
           <p className="mt-2">{props.title}</p>
-        </Link>
+        </button>
       </Animation>
     </li>
   );

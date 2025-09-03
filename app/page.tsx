@@ -5,8 +5,18 @@ import ReadmoreW from "./compornents/ReadmoreW";
 import Footer from "./compornents/Footer";
 import Animation from "./compornents/Animation";
 import { useEffect, useState } from "react";
+import Modal from "./compornents/Modal";
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalData, setModalData] = useState<{
+    title: string;
+    description?: string;
+    image?: string;
+    href?: string;
+  }>({ title: "" });
+  const handleOpenModal = () => setIsModalOpen(true);
+  const handleCloseModal = () => setIsModalOpen(false);
   type WorkItem = {
     url: string;
     title: string;
@@ -75,8 +85,11 @@ export default function Home() {
                 key={work.url}
                 href={work.url}
                 title={work.title}
-                img={work.image}
+                image={work.image}
+                description={work.description}
                 className=""
+                onOpenModal={handleOpenModal}
+                setModalData={setModalData}
               />
             ))}
           </ul>
@@ -106,6 +119,13 @@ export default function Home() {
           </Animation>
         </div>
       </section>
+      <Modal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        title={modalData.title}
+        description={modalData.description}
+        image={modalData.image}
+      />
       <Footer color="white" />
     </>
   );

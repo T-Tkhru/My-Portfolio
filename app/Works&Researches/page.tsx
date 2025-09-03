@@ -6,12 +6,22 @@ import { Metadata } from "next";
 import Animation from "../compornents/Animation";
 import Footer from "../compornents/Footer";
 import { useEffect, useState } from "react";
+import Modal from "../compornents/Modal";
 
 export default function Works() {
-  type WorkItem = {
-    href: string;
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalData, setModalData] = useState<{
     title: string;
-    img: string;
+    description?: string;
+    image?: string;
+    href?: string;
+  }>({ title: "" });
+  const handleOpenModal = () => setIsModalOpen(true);
+  const handleCloseModal = () => setIsModalOpen(false);
+  type WorkItem = {
+    url: string;
+    title: string;
+    image: string;
     description?: string;
   };
 
@@ -52,13 +62,16 @@ export default function Works() {
           </h2>
         </Animation>
         <ul className="flex flex-col md:flex-row flex-wrap items-center h-auto">
-          {WorkList.map((work: WorkItem, index: number) => (
+          {WorkList.map((work, index) => (
             <Workbox
-              key={work.href}
-              href={work.href}
+              key={work.url}
+              href={work.url}
               title={work.title}
-              img={work.img}
+              image={work.image}
+              description={work.description}
               className=""
+              onOpenModal={handleOpenModal}
+              setModalData={setModalData}
             />
           ))}
         </ul>
@@ -87,6 +100,13 @@ export default function Works() {
           ))}
         </ul>
       </section>
+      <Modal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        title={modalData.title}
+        description={modalData.description}
+        image={modalData.image}
+      />
       <Footer color="white" />
     </>
   );
