@@ -1,5 +1,33 @@
 [
   {
+    "url": "https://note.com/banechisan/n/nfc60905bb4b8",
+    "title": "フィールズリンク",
+    "image": "/feelslink.png",
+    "description": "ARGと呼ばれるタイプの謎解きゲーム。フィールズリンクという架空のゲームのWikiサイトを調査し、謎を解いていく。友人と3人で制作。",
+    "githubUrl": ""
+  },
+  {
+    "url": "https://github.com/Bamiry/Spreadink",
+    "title": "スプレッディンク",
+    "image": "/spreadink.png",
+    "description": "タップした場所にインクを落とし、指定された割合になるようキャンバスを塗りつぶすゲーム。サイバーエージェントの夏インターンシップ「プロトスプリントリーグ」で制作、最優秀賞受賞。Unityで制作。3人で制作し、インクの塗り面積計算、ハンバーガーメニュー、レベルデザイン、音量バランス調整、タスク管理を担当。リリースに向けて制作中（リンクはGitHubのもの）",
+    "githubUrl": "https://github.com/Bamiry/Spreadink"
+  },
+  {
+    "url": "https://unityroom.com/games/tofu_cut_master",
+    "title": "豆腐カットマスター",
+    "image": "/tofu_cut_master.png",
+    "description": "豆腐を素早く正確にカットするアクションゲーム。切った豆腐のサイズがなるべく均一になるようにカットしよう。",
+    "githubUrl": "https://github.com/T-Tkhru/TofuCutMaster"
+  },
+  {
+    "url": "https://github.com/T-Tkhru/MazeJummer",
+    "title": "MazeJummer",
+    "image": "/mazejummer.png",
+    "description": "2人対戦オンライン迷路脱出ゲーム。脱出側（ランナー）と妨害側（トラッパー）に分かれて対戦し、ランナーはカギを手に入れ迷路からの脱出を、トラッパーは壁生成やトラップを用いてランナーの妨害を目指す。Unityで制作。",
+    "githubUrl": "https://github.com/T-Tkhru/MazeJummer"
+  },
+  {
     "url": "https://hayaoshi-button.vercel.app/",
     "title": "早押しボタン",
     "image": "/game.png",
@@ -14,31 +42,10 @@
     "githubUrl": "https://github.com/T-Tkhru/money-h-l"
   },
   {
-    "url": "https://unityroom.com/games/tofu_cut_master",
-    "title": "豆腐カットマスター",
-    "image": "/tofu_cut_master.png",
-    "description": "豆腐を素早く正確にカットするアクションゲーム。切った豆腐のサイズがなるべく均一になるようにカットしよう。",
-    "githubUrl": "https://github.com/T-Tkhru/TofuCutMaster"
-  },
-  {
-    "url": "/works/4",
-    "title": "準備中",
-    "image": "/silverratio.png",
-    "description": "新しい作品を準備中です。",
-    "githubUrl": ""
-  },
-  {
-    "url": "/works/5",
-    "title": "準備中",
-    "image": "/silverratio.png",
-    "description": "新しい作品を準備中です。",
-    "githubUrl": ""
-  },
-  {
-    "url": "/works/6",
-    "title": "準備中",
-    "image": "/silverratio.png",
-    "description": "新しい作品を準備中です。",
-    "githubUrl": ""
+    "url": "https://github.com/T-Tkhru/PuchiYakusoku",
+    "title": "プチ約束",
+    "image": "/puchiyakusoku.png",
+    "description": "LINEアプリ上で動作する、簡単な約束を手軽に交わせるアプリ。Engineer Guild Hackathonで制作、3位入賞。アイデア出しやプロジェクトの要件定義、タスク管理やスライド作成などのマネジメント部分を担当。（リンクはGitHubのもの）",
+    "githubUrl": "https://github.com/T-Tkhru/PuchiYakusoku"
   }
 ]
