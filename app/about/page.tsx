@@ -95,11 +95,13 @@ export default function About() {
                 key={idx}
                 className="mb-6 border-b border-gray-600 pb-4 font-kosugimaru"
               >
-                <div className="font-bold text-xl md:text-2xl mb-1">
-                  {award.title}
-                </div>
-                <div className="text-gray-300 mb-1">{award.year}</div>
-                <div>{award.detail}</div>
+                <Animation animation="animate__fadeInUp">
+                  <div className="font-bold text-xl md:text-2xl mb-1">
+                    {award.title}
+                  </div>
+                  <div className="text-gray-300 mb-1">{award.year}</div>
+                  <div>{award.detail}</div>
+                </Animation>
               </li>
             ))}
           </ul>
