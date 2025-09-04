@@ -41,19 +41,21 @@ const Workbox = (props: WorkboxProps) => {
         delay="200ms"
         rootMargin="-100px"
       >
-        <button
-          className="w-full text-left text-2xl text-black hover:opacity-70 duration-300 focus:outline-none"
-          onClick={handleClick}
-        >
-          <div className="relative w-full pb-[70.71%] overflow-hidden">
-            <img
-              src={props.image}
-              alt={props.title}
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-          </div>
-          <p className="mt-2">{props.title}</p>
-        </button>
+        <div className="w-full rounded-2xl border border-gray-300 shadow-lg bg-white hover:shadow-2xl transition-shadow duration-300">
+          <button
+            className="w-full text-left text-2xl text-black hover:opacity-70 duration-300 focus:outline-none rounded-2xl"
+            onClick={handleClick}
+          >
+            <div className="relative w-full pb-[70.71%] overflow-hidden rounded-t-2xl">
+              <img
+                src={props.image}
+                alt={props.title}
+                className="absolute inset-0 w-full h-full object-cover rounded-t-2xl"
+              />
+            </div>
+            <p className="mt-2 px-4 pb-4">{props.title}</p>
+          </button>
+        </div>
       </Animation>
     </li>
   );
