@@ -23,13 +23,38 @@ export default function About() {
     {
       year: "2025年8月",
       title: "プロトスプリントリーグ 最優秀賞",
-      detail:
-        "サイバーエージェントの夏季インターンシップ（ゲーム開発）で最優秀賞受賞。",
+      detail: (
+        <>
+          サイバーエージェントの夏季インターンシップ（ゲーム開発）で最優秀賞受賞。制作物は「
+          <a
+            href="https://github.com/Bamiry/Spreadink"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            スプレッディンク
+          </a>
+          」
+        </>
+      ),
     },
     {
       year: "2025年3月",
       title: "Engineer Guild Hackathon 3位入賞",
-      detail: "外資就活ドットコム主催のハッカソンで3位入賞。",
+      detail: (
+        <>
+          外資就活ドットコム主催のハッカソンで3位入賞。制作物は「
+          <a
+            href="https://github.com/T-Tkhru/PuchiYakusoku"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            プチ約束
+          </a>
+          」
+        </>
+      ),
     },
     {
       year: "2020年1月",
