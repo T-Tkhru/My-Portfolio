@@ -2,17 +2,19 @@ import Animation from "./Animation";
 import Modal from "./Modal";
 
 interface WorkboxProps {
-  href: string;
+  url: string;
   title: string;
   image: string;
   description?: string;
+  githubUrl?: string;
   className: string;
   onOpenModal?: () => void;
   setModalData?: (data: {
     title: string;
     description?: string;
     image?: string;
-    href?: string;
+    url?: string;
+    githubUrl?: string;
   }) => void;
 }
 
@@ -23,7 +25,8 @@ const Workbox = (props: WorkboxProps) => {
         title: props.title,
         description: props.description,
         image: props.image,
-        href: props.href,
+        url: props.url,
+        githubUrl: props.githubUrl,
       });
     }
     if (props.onOpenModal) {

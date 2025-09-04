@@ -14,7 +14,8 @@ export default function Works() {
     title: string;
     description?: string;
     image?: string;
-    href?: string;
+    url?: string;
+    githubUrl?: string;
   }>({ title: "" });
   const handleOpenModal = () => setIsModalOpen(true);
   const handleCloseModal = () => setIsModalOpen(false);
@@ -23,6 +24,7 @@ export default function Works() {
     title: string;
     image: string;
     description?: string;
+    githubUrl?: string;
   };
 
   const ResearchList = [
@@ -65,13 +67,20 @@ export default function Works() {
           {WorkList.map((work, index) => (
             <Workbox
               key={work.url}
-              href={work.url}
+              url={work.url}
               title={work.title}
               image={work.image}
               description={work.description}
+              githubUrl={work.githubUrl}
               className=""
               onOpenModal={handleOpenModal}
-              setModalData={setModalData}
+              setModalData={(data) =>
+                setModalData({
+                  ...data,
+                  githubUrl: work.githubUrl,
+                  url: work.url,
+                })
+              }
             />
           ))}
         </ul>
@@ -106,6 +115,8 @@ export default function Works() {
         title={modalData.title}
         description={modalData.description}
         image={modalData.image}
+        url={modalData.url}
+        githubUrl={modalData.githubUrl}
       />
       <Footer color="white" />
     </>
