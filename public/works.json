@@ -24,7 +24,7 @@
     "url": "https://github.com/T-Tkhru/MazeJummer",
     "title": "MazeJummer",
     "image": "/mazejummer.png",
-    "description": "2人対戦オンライン迷路脱出ゲーム。脱出側（ランナー）と妨害側（トラッパー）に分かれて対戦し、ランナーはカギを手に入れ迷路からの脱出を、トラッパーは壁生成やトラップを用いてランナーの妨害を目指す。Unityで制作。",
+    "description": "2人対戦オンライン迷路脱出ゲーム。脱出側（ランナー）と妨害側（トラッパー）に分かれて対戦し、ランナーはカギを手に入れ迷路からの脱出を、トラッパーは壁生成やトラップを用いてランナーの妨害を目指す。Unityで制作。現在リリースに向けて制作中（リンクはGitHubのもの）",
     "githubUrl": "https://github.com/T-Tkhru/MazeJummer"
   },
   {
