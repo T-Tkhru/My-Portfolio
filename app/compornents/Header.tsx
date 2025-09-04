@@ -21,7 +21,7 @@ const Header = () => {
           <img
             src="/banechiIcon.jpg"
             alt="logo"
-            className="w-16 h-16 max-h-16 rounded-full shadow-md border border-gray-300 object-cover"
+            className="w-16 h-16 max-h-16 rounded-full  border border-gray-800 object-cover"
           />
         </Link>
         <ul className="md:flex space-x-10 mr-4 text-2xl hidden text-black">
