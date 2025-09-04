@@ -85,7 +85,7 @@ const Modal: React.FC<ModalProps> = ({
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                  className="px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition font-kosugimaru"
+                className="px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition font-kosugimaru"
               >
                 見てみる
               </a>
