@@ -1,25 +1,22 @@
+"use client";
 import Link from "next/link";
+
 import Footer from "../compornents/Footer";
 import { Metadata } from "next";
 import Animation from "../compornents/Animation";
-
-export const metadata: Metadata = {
-  title: "Takaharu T. Portfolio - About",
-  description: "Learn more about Takaharu T.",
-};
+import { useEffect, useState } from "react";
 
 export default function About() {
-  const webSkills = [
-    "HTML",
-    "CSS",
-    "TailwindCSS",
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Next.js",
-  ];
-  const gameSkills = ["Unity", "C#"];
-  const otherSkills = ["Python", "Git", "Figma", "AviUtl"];
+  type Skill = { name: string; description: string };
+  type SkillCategory = { category: string; skills: Skill[] };
+  const [skillCategories, setSkillCategories] = useState<SkillCategory[]>([]);
+  // マウスオーバー機能一時停止
+
+  useEffect(() => {
+    fetch("/skills.json")
+      .then((res) => res.json())
+      .then((data) => setSkillCategories(data));
+  }, []);
   const awards = [
     {
       year: "2025年8月",
@@ -115,52 +112,36 @@ export default function About() {
             Skills
           </h2>
         </Animation>
-        <div className="skillswrap flex flex-col md:flex-row md:space-x-4 w-full">
-          <div className="w-full md:w-1/3 mb-8 md:mb-0">
-            <Animation animation="animate__fadeInUp">
-              <h3 className="text-4xl text-black mb-4">Web</h3>
-              <ul className="flex justify-center space-x-4 flex-wrap pt-4 bg-gray-100 rounded-xl">
-                {webSkills.map((skill) => (
-                  <li
-                    key={skill}
-                    className="text-2xl bg-white text-black p-2 mb-4 rounded-md"
-                  >
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-            </Animation>
-          </div>
-          <div className="w-full md:w-1/3 mb-8 md:mb-0">
-            <Animation animation="animate__fadeInUp">
-              <h3 className="text-4xl text-black mb-4">Game</h3>
-              <ul className="flex justify-center space-x-4 flex-wrap pt-4 bg-gray-200 rounded-xl">
-                {gameSkills.map((skill) => (
-                  <li
-                    key={skill}
-                    className="text-2xl bg-white text-black p-2 mb-4 rounded-md"
-                  >
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-            </Animation>
-          </div>
-          <div className="w-full md:w-1/3">
-            <Animation animation="animate__fadeInUp">
-              <h3 className="text-4xl text-black mb-4">Others</h3>
-              <ul className="flex justify-center space-x-4 flex-wrap pt-4 bg-gray-300 rounded-xl">
-                {otherSkills.map((skill) => (
-                  <li
-                    key={skill}
-                    className="text-2xl bg-black text-white p-2 mb-4 rounded-md"
-                  >
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-            </Animation>
-          </div>
+        <div className="skillswrap flex flex-col md:flex-row md:space-x-4 w-full  mx-auto ">
+          {skillCategories.map((cat, idx) => (
+            <div key={cat.category} className={`w-full md:w-1/3 mb-8 md:mb-0 `}>
+              <Animation animation="animate__fadeInUp">
+                <h3 className="text-4xl text-black mb-4">{cat.category}</h3>
+                <ul
+                  className={`flex justify-center space-x-4 flex-wrap pt-4  ${
+                    idx === 0
+                      ? "bg-gray-100"
+                      : idx === 1
+                      ? "bg-gray-200"
+                      : "bg-gray-300"
+                  } rounded-xl`}
+                >
+                  {cat.skills.map((skill) => (
+                    <li
+                      key={skill.name}
+                      className={`relative text-2xl p-2 mb-4 rounded-md   ${
+                        idx === 2
+                          ? "bg-black text-white"
+                          : "bg-white text-black"
+                      }`}
+                    >
+                      {skill.name}
+                    </li>
+                  ))}
+                </ul>
+              </Animation>
+            </div>
+          ))}
         </div>
       </section>
 

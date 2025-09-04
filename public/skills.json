@@ -1,0 +1,65 @@
+[
+  {
+    "category": "Web",
+    "skills": [
+      {
+        "name": "HTML",
+        "description": "React勉強前に少し触れた程度。基礎はわかってるぐらい。"
+      },
+      {
+        "name": "CSS",
+        "description": "HTMLと同様に少し触れた程度。基礎はわかってるぐらい。"
+      },
+      {
+        "name": "TailwindCSS",
+        "description": "React、Next.jsで使用。"
+      },
+      {
+        "name": "JavaScript",
+        "description": "React勉強前に少し触れた程度。基礎はわかってるぐらい。"
+      },
+      {
+        "name": "TypeScript",
+        "description": "React、Next.jsで使用。"
+      },
+      {
+        "name": "React",
+        "description": "2024年夏から学習開始。簡単なWebアプリやポートフォリオサイト（これ）を制作。"
+      },
+      {
+        "name": "Next.js",
+        "description": "Reactと同時期2024年夏から学習開始。簡単なWebアプリやポートフォリオサイトを制作。現在アルバイトでも使用中。"
+      }
+    ]
+  },
+  {
+    "category": "Game",
+    "skills": [
+      {
+        "name": "Unity",
+        "description": "2025年3月から学習開始。いくつかのゲームを制作した。"
+      },
+      {
+        "name": "C#",
+        "description": "Unityと同時に学習開始。Unityでのゲーム制作に使用。"
+      }
+    ]
+  },
+  {
+    "category": "Others",
+    "skills": [
+      {
+        "name": "Python",
+        "description": "高校生の時に軽く触れ、現在も研究で使用中。主に機械学習に使用し、PyTorchやTensorFlow、scikit-learn、NumPy、Pandas、Matplotlibなどのライブラリを使用している。"
+      },
+      {
+        "name": "Git",
+        "description": "ブランチ管理やマージの操作に慣れている。"
+      },
+      {
+        "name": "Figma",
+        "description": "ゲーム制作ではほとんどこれを使ってUIデザインやフロー図を作成している。"
+      }
+    ]
+  }
+]
