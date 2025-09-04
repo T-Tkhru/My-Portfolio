@@ -75,7 +75,9 @@ const Modal: React.FC<ModalProps> = ({
               style={{ objectFit: "contain" }}
             />
           )}
-          <h3 className="text-2xl md:text-3xl font-bold mb-4">{title}</h3>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4 font-kosugimaru">
+            {title}
+          </h3>
           <p className="text-gray-700 text-base md:text-lg mb-6">
             {description}
           </p>

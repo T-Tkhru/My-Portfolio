@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 export default function About() {
-  const frontSkills = [
+  const webSkills = [
     "HTML",
     "CSS",
     "TailwindCSS",
@@ -18,7 +18,8 @@ export default function About() {
     "React",
     "Next.js",
   ];
-  const backSkills = ["Python", "C++"];
+  const gameSkills = ["Unity", "C#"];
+  const otherSkills = ["Python", "Git", "Figma", "AviUtl"];
   const awards = [
     {
       year: "2025年8月",
@@ -115,11 +116,11 @@ export default function About() {
           </h2>
         </Animation>
         <div className="skillswrap flex flex-col md:flex-row md:space-x-4 w-full">
-          <div className="front w-full md:w-1/2 ">
+          <div className="w-full md:w-1/3 mb-8 md:mb-0">
             <Animation animation="animate__fadeInUp">
-              <h2 className="text-4xl text-black mb-4">Frontend</h2>
-              <ul className="front flex justify-center space-x-4 flex-wrap pt-4 bg-gray-500 rounded-xl">
-                {frontSkills.map((skill) => (
+              <h3 className="text-4xl text-black mb-4">Web</h3>
+              <ul className="flex justify-center space-x-4 flex-wrap pt-4 bg-gray-100 rounded-xl">
+                {webSkills.map((skill) => (
                   <li
                     key={skill}
                     className="text-2xl bg-white text-black p-2 mb-4 rounded-md"
@@ -130,15 +131,29 @@ export default function About() {
               </ul>
             </Animation>
           </div>
-
-          <div className="backend w-full md:w-1/2 ">
+          <div className="w-full md:w-1/3 mb-8 md:mb-0">
             <Animation animation="animate__fadeInUp">
-              <h2 className="text-4xl text-black mb-4">Backend</h2>
-              <ul className="back flex justify-center space-x-4 flex-wrap pt-4 bg-gray-300 rounded-xl">
-                {backSkills.map((skill) => (
+              <h3 className="text-4xl text-black mb-4">Game</h3>
+              <ul className="flex justify-center space-x-4 flex-wrap pt-4 bg-gray-200 rounded-xl">
+                {gameSkills.map((skill) => (
                   <li
                     key={skill}
-                    className="text-2xl bg-black text-white p-2 mb-4 rounded-md "
+                    className="text-2xl bg-white text-black p-2 mb-4 rounded-md"
+                  >
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </Animation>
+          </div>
+          <div className="w-full md:w-1/3">
+            <Animation animation="animate__fadeInUp">
+              <h3 className="text-4xl text-black mb-4">Others</h3>
+              <ul className="flex justify-center space-x-4 flex-wrap pt-4 bg-gray-300 rounded-xl">
+                {otherSkills.map((skill) => (
+                  <li
+                    key={skill}
+                    className="text-2xl bg-black text-white p-2 mb-4 rounded-md"
                   >
                     {skill}
                   </li>
