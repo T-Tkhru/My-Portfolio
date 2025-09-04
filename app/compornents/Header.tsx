@@ -17,8 +17,12 @@ const Header = () => {
         }`}
       ></div>
       <div className="relative flex justify-between w-full h-full items-center z-10">
-        <Link href="/" className="h-20">
-          <img src="/logo.png" alt="logo" className="max-h-full rounded-lg" />
+        <Link href="/" className="h-20 flex items-center ml-4">
+          <img
+            src="/banechiIcon.jpg"
+            alt="logo"
+            className="w-16 h-16 max-h-16 rounded-full shadow-md border border-gray-300 object-cover"
+          />
         </Link>
         <ul className="md:flex space-x-10 mr-4 text-2xl hidden text-black">
           <li>
